@@ -1,18 +1,13 @@
 function randomData(){
-  let randValue = Math.random();
+  setTimeout(function(){
+    let randValue = Math.random();
   alert(randValue);
+  }, 2000);
+  
 }
 
 function getData(callback){
   callback();
 }
-
-
-setTimeout(function(){
-  function randomData(){
-    let randValue = Math.random();
-    alert(randValue);
-  }
-}, 2000);
 
 getData(randomData);
